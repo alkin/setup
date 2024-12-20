@@ -1,3 +1,5 @@
+# TODO: 
+
 # Favorite apps for dock
 apps=(
 	"google-chrome.desktop"

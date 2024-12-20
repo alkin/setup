@@ -1,7 +1,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-echo "🚀 Installing Alkin Setup..."
+echo "🚀 Installing Setup..."
 
 echo "🔗 Setting up pacman..."
 
@@ -15,7 +15,7 @@ sudo pacman-mirrors --country ${COUNTRY:-Brazil}
 sudo pacman -Syyuu --noconfirm
 sudo pacman -S --noconfirm yay git base-devel
 
-echo "🔗 Cloning Alkin Setup..."
+echo "🔗 Cloning Setup..."
 
 rm -rf ~/.local/share/setup
 

@@ -1,4 +1,3 @@
-
 # get kernel version
 KERNEL_VERSION=$(pacman -Q linux | awk '{print $1}')
 

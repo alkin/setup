@@ -1,8 +1,8 @@
+# Install flatpak
 yay -S --needed flatpak --noconfirm
-
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# Run terminal installers
+# Run desktop installers
 for installer in ~/.local/share/setup/install/desktop/*.sh; do source $installer; done
 
 # Green Check emoji
