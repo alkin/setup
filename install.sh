@@ -5,14 +5,12 @@ set -e
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.session idle-delay 0
 
-# Install gum and prompt for choices
-source ~/.local/share/setup/install/prompt.sh
-
-# Install init tools
+# Install
 source ~/.local/share/setup/install/init.sh
 
-# Install terminal tools
 source ~/.local/share/setup/install/terminal.sh
+
+source ~/.local/share/setup/install/dev.sh
 
 # Install desktop tools and tweaks
 # source ~/.local/share/setup/install/desktop.sh
