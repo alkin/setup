@@ -19,4 +19,4 @@ sudo systemctl restart docker.service
 sudo systemctl enable docker.service
 
 # Log into docker group
-newgrp docker
+# newgrp docker

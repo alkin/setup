@@ -28,6 +28,7 @@ alias gcad='git commit -a --amend'
 
 # Kubernetes
 alias k='kubectl'
+alias sail="vendor/bin/sail"
 
 # Compression
 compress() { tar -czf "${1%/}.tar.gz" "${1%/}"; }
