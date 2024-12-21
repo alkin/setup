@@ -2,7 +2,7 @@
 
 Run
 
-    wget -Oq- https://raw.githubusercontent.com/alkin/setup/main/boot.sh | bash
+    wget -qO- https://raw.githubusercontent.com/alkin/setup/main/boot.sh | bash
 
 # Login
 
