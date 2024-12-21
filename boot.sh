@@ -10,6 +10,8 @@ sudo sed -i -e 's/#ParallelDownloads = 5/ParallelDownloads = 10/g' /etc/pacman.c
 sudo sed -i -e 's/pkg.tar.xz/pkg.tar/g' /etc/makepkg.conf
 sudo sed -i -e 's/pkg.tar.xz/pkg.tar/g' /etc/makepkg.conf
 
+sudo pacman -Syy
+
 sudo pacman-mirrors --country ${COUNTRY:-Brazil}
 
 sudo pacman -Syyuu --noconfirm
