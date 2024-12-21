@@ -1,25 +1,21 @@
-# TODO: 
-
 # Favorite apps for dock
 apps=(
 	"google-chrome.desktop"
 	"Alacritty.desktop"
-	"Neovim.desktop"
-	"code.desktop"
+	"cursor-cursor.desktop"
+	# "code.desktop"
 	"WhatsApp.desktop"
-	"signal-desktop.desktop"
-	"Zoom.desktop"
 	"spotify.desktop"
-	"steam.desktop"
-	"pinta_pinta.desktop"
-	"md.obsidian.Obsidian.desktop"
-	"Activity.desktop"
-	"Docker.desktop"
-	"Omakub.desktop"
-	"Bitwarden.desktop"
+	# "steam.desktop"
+	# "pinta_pinta.desktop"
+	# "md.obsidian.Obsidian.desktop"
+	# "Activity.desktop"
+	# "Docker.desktop"
+	# "Omakub.desktop"
+	# "Bitwarden.desktop"
 	"org.gnome.Settings.desktop"
 	"org.gnome.Nautilus.desktop"
-	"localsend_app.desktop"
+	# "localsend_app.desktop"
 )
 
 # Array to hold installed favorite apps
@@ -42,6 +38,8 @@ for app in "${apps[@]}"; do
 		fi
 	done
 done
+
+echo installed_apps: "${installed_apps[@]}"
 
 # Convert the array to a format suitable for gsettings
 favorites_list=$(printf "'%s'," "${installed_apps[@]}")
