@@ -6,9 +6,8 @@ echo "🚀 Installing Setup..."
 echo "🔗 Setting up pacman..."
 
 sudo sed -i -e 's/#Color/Color/g' /etc/pacman.conf
-sudo sed -i -e 's/#ParallelDownloads = 5/ParallelDownloads = 10/g' /etc/pacman.conf
-sudo sed -i -e 's/pkg.tar.xz/pkg.tar/g' /etc/makepkg.conf
-sudo sed -i -e 's/pkg.tar.xz/pkg.tar/g' /etc/makepkg.conf
+sudo sed -i -e 's/ParallelDownloads = 4/ParallelDownloads = 10/g' /etc/pacman.conf
+sudo sed -i -e 's/pkg.tar.zst/pkg.tar/g' /etc/makepkg.conf
 
 sudo pacman -Syy
 
