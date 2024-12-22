@@ -1,4 +1,4 @@
-import = [ "~/.local/share/setup/defaults/alacritty/pane.toml" ]
+general.import = [ "~/.local/share/setup/defaults/alacritty/pane.toml" ]
 
 [window]
 dimensions.columns = 90
